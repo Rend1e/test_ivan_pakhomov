@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F5F5F5;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Mobile container */
+        @media (min-width: 360px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        /* Desktop container */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1776px;
+            }
+        }
+
+        /* Nav */
+        .nav {
+            margin: auto;
+            margin-top: 0px;
+            height: 72px;
+            max-width: 1776px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 22px;
+        }
+
+        .nav .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            height: 92px;
+            
+        }
+        .logo {
+            margin-top: 16px;
+            width: 49px;
+            height: 60px;
+        }
+        .nav1 {
+            display: flex;
+            gap: 32px;
+            margin-left: 435.5px;
+
+        }
+        .nav2 {
+            margin-top: 30px;
+        }
+        .nav3 {
+            margin-right: 0px;
+            width: 395px;
+            display: flex;
+            justify-content: right;
+        }
+        .tel {
+            font-size: 100%;
+            margin-top: 28px;
+            margin-left: 12px;
+        }
+        .svg1 {
+            margin-top: 9px;
+            width: 52px;
+        }
+        .svg12 {
+            margin-top: 9px;
+            margin-left: 12px;
+            width: 52px;
+            margin-right: 12px;
+        }
+        .svg13 {
+            margin-top: 9px;
+            width: 52px;
+            margin-right: 0px;
+        }
+        /* Example section */
+        .section {
+            margin-top: 80px;
+        }
+        .block1 {
+            height: 1044px;
+        }
+        .header1 {
+            text-align: center;
+            width: 100%;
+            height: 154px;
+            font-size: 64px;
+        }
+        .befaf {
+            margin: auto;
+            margin-top: 52px;
+            height: 838px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .bef {
+            height: 838px;
+            width: 50%;
+            object-fit: cover;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            z-index: 1;
+        }
+        .after {
+            height: 838px;
+            width: 888px;
+            object-fit: cover;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            z-index: 2;
+        }
+
+        .slider {
+            position: absolute;
+            margin-left: 842.5px;
+            z-index: 3;
+        }
+
+        .block2 {
+            margin-top: 140px;
+            height: 704px;
+        }
+        .block21 {
+            height: 124px;
+            display: flex;
+            justify-content: space-between
+        }
+        .block211 {
+            width: 869px;
+            height: 124px;
+            font-size: 52px;
+        }
+        .block212 {
+            width: 562px;
+            height: 96px;
+            font-size: 22px;
+        }
+        .block22{
+            margin-top: 52px;
+            height: 528px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            font-size: 28px;
+        }
+        .block2white {
+            margin: auto;
+            height: 408px;
+            width: 411px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 30px;
+        }
+        .block2black {
+            margin: 120px auto;
+            height: 408px;
+            width: 411px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-color: #333333;
+            color: white;
+            border-radius: 30px;
+
+        }
+        .block3 {
+            height: 955px;
+            margin-top: 140px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="logo">
+            
+        <img src="img/logo.svg" alt="Icon">
+
+        </div>
+        <div class="nav1">
+            <div class="nav2">Как работаем</div>
+            <div class="nav2">Что строим</div>
+            <div class="nav2">О нас</div>
+            <div class="nav2">Команда</div>
+            <div class="nav2">Проекты</div>
+            <div class="nav2">Контакты</div>
+        </div>
+
+        <div class="nav3"> 
+            <img src="img/telephone.svg" alt="Icon" class="svg1"> 
+            <div class="tel">+7 (999) 123-45-67</div> 
+            <img src="img/telegram.svg" alt="Icon" class="svg12"> 
+            <img src="img/max.svg" alt="Icon" class="svg13"> 
+        </div>
+
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="block1">
+                <h1 class="header1">Превратите вашу землю в постоянный источник дохода без личных вложений</h1>
+                <div class="befaf">
+                    <img src="img/hero-image-before.png" alt="" class="bef">
+                    <img src="img/slider element.svg" alt="Icon" class="slider">
+                    <img src="img/hero-image-after.png" alt="" class="after">
+                </div>
+            </div>
+
+            <div class="block2">
+                <div class="block21">
+                    <div class="block211">
+                        4 причины, по которым ваша земля не приносит доход
+                    </div>
+                    <div class="block212">
+                        Мы берём решение этих задач на себя, чтобы вы получили результат без лишних сложностей и вложений.
+                    </div>
+                </div>
+                <div class="block22">
+                    <div class="block2white">
+                        Земля лежит <br>мертвым грузом
+                    </div>
+                    <div class="block2black">
+                        Землю трудно <br>выгодно продать
+                    </div>
+                    <div class="block2white">
+                        Нет капитала <br>для застройки
+                    </div>
+                    <div class="block2black">
+                        Земля имеет <br>скрытые ограничения
+                    </div>
+                </div>
+            </div>
+            
+            <div class="block3">
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
