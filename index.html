@@ -37,6 +37,9 @@
                 max-width: 1776px;
             }
         }
+        .container img {
+            padding: 0%;
+        }
 
         /* Nav */
         .nav {
@@ -195,6 +198,122 @@
             height: 955px;
             margin-top: 140px;
         }
+        .block5 {
+            margin-top: 140px;
+            height: 1126px;
+        }
+        .header5 {
+            display: flex;
+            justify-content: space-between;
+            height: 124px;
+            width: 100%;
+
+        }
+        .header51 { 
+            width: 1170px;
+            height: 124px;
+            font-size: 52px;
+        }
+        .header52 {
+            width: 562px;
+            height: 64px;  
+            font-size: 22px;
+        }
+        .content5 {
+            margin-top: 52px;
+            width: 100%;
+            height: 950px;
+        }
+
+        .back5 {
+            width: 100%;
+            max-width: 1776px;
+            height: 860px;
+            border-radius: 30px;
+        }
+        .block5.fixed {
+            width: 100%;
+            height: 860px;
+            max-width: 1776px;
+            position: fixed;
+            top: 5px; 
+        }
+        .text5 {
+            margin-top: 32px;
+            width: 954px;
+            height: 58px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .block6 {
+            margin-top: 140px;
+            width: 100%;
+            height: 12440px;
+        }
+        .scrol1
+        {
+            display: grid;
+            position:absolute;
+            width: 100%;
+            height: 860px;
+            max-width: 1776px;
+            border-radius: 28px;
+            background-image: url(img/industrial.png);
+            z-index: 1;
+        }
+        .scrol2
+        {
+            border-radius: 28px;
+            display: grid;
+            position: absolute;
+            width: 100%;
+            height: 860px;
+            max-width: 1776px;
+            z-index: 2;
+            border: 1px black solid;
+        }
+        .scrol3
+        {
+            border-radius: 28px;
+            display: grid;
+            position: absolute;
+            width: 100%;
+            height: 860px;
+            max-width: 1776px;
+            z-index: 3;
+        }
+        .scrol11    {
+            width: 100%;
+            max-width: 1776px;
+        }
+        .scrol12    {
+            aspect-ratio: 14 / 1;
+            height: 0px;
+            background-image: url(img/mixed.png);
+            background-size: 100% 1400%;
+            background-repeat: no-repeat;
+            background-position: 0 calc((100% / 13) * var(--i));
+            width: 100%;
+            max-width: 1776px;
+        }
+        .scrol13    {
+            aspect-ratio: 14 / 1;
+            height: 0px;
+            width: 100%;
+            max-width: 1776px;
+            background-image: url(img/cottage.png);
+            background-size: 100% 1400%;
+            background-repeat: no-repeat;
+            background-position: 0 calc((100% / 13) * var(--i));
+        }
+        .scrol13.bottom-up {
+            position: absolute;
+            bottom: 0;
+        }
+
+
+        
+
     </style>
 </head>
 <body>
@@ -262,8 +381,170 @@
             <div class="block3">
 
             </div>
+
+            <div class="block5">
+                <div class="header5">
+                    <div class="header51">
+                        Варианты объектов застройки <br> на вашем участке 
+                    </div>
+                    <div class="header52">
+                        Посмотрите, что может быть построено на вашей земле, после подготовки участков к продаже
+                    </div>
+                </div>
+                <div class="content5">
+                    <div class="back5">
+                        <div class="card5">
+                            <div class="card51">
+                                <div class="scrol1" id="scroll1">
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                    <div class="scrol11"></div>
+                                </div>
+                                <div class="scrol2" id="scroll2">
+                                    <div class="scrol12" style="--i:0"></div>
+                                    <div class="scrol12" style="--i:1"></div>
+                                    <div class="scrol12" style="--i:2"></div>
+                                    <div class="scrol12" style="--i:3"></div>
+                                    <div class="scrol12" style="--i:4"></div>
+                                    <div class="scrol12" style="--i:5"></div>
+                                    <div class="scrol12" style="--i:6"></div>
+                                    <div class="scrol12" style="--i:7"></div>
+                                    <div class="scrol12" style="--i:8"></div>
+                                    <div class="scrol12" style="--i:9"></div>
+                                    <div class="scrol12" style="--i:10"></div>
+                                    <div class="scrol12" style="--i:11"></div>
+                                    <div class="scrol12" style="--i:12"></div>
+                                    <div class="scrol12" style="--i:13"></div>
+                                </div>
+                                <div class="scrol3" id="scroll3">
+                                    <div class="scrol13" style="--i:0"></div>
+                                    <div class="scrol13" style="--i:1"></div>
+                                    <div class="scrol13" style="--i:2"></div>
+                                    <div class="scrol13" style="--i:3"></div>
+                                    <div class="scrol13" style="--i:4"></div>
+                                    <div class="scrol13" style="--i:5"></div>
+                                    <div class="scrol13" style="--i:6"></div>
+                                    <div class="scrol13" style="--i:7"></div>
+                                    <div class="scrol13 " style="--i:8"></div>
+                                    <div class="scrol13 " style="--i:9"></div>
+                                    <div class="scrol13 " style="--i:10"></div>
+                                    <div class="scrol13 " style="--i:11"></div>
+                                    <div class="scrol13 " style="--i:12"></div>
+                                    <div class="scrol13 " style="--i:13"></div>
+                                </div>
+                            </div>
+                            <div class="header-card5">
+
+                            </div>
+                            <div class="text-card5">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text5">
+                        <div id="text51">
+                            Индустриальный парк
+                        </div>
+                        <div id="text52">
+                            Коттеджный поселок
+                        </div>
+                        <div id="text53">
+                            Смешанный формат
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block6">
+
+            </div>
         </div>
     </section>
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scroll1 = document.getElementById('scroll1');
+    const scroll2 = document.getElementById('scroll2');
+    const scroll3 = document.getElementById('scroll3');
+    const img = document.querySelector('.block5');
+    const img1 = document.querySelectorAll('.scrol11');
+    const img2 = document.querySelectorAll('.scrol12');
+    const img3 = document.querySelectorAll('.scrol13');
+    const sc1 = document.querySelectorAll('.scrol1');
+    const sc2 = document.querySelectorAll('.scrol2');
+    const sc3 = document.querySelectorAll('.scrol3');
+    const start = img.offsetTop;
+    const viewportHeight = img.offsetHeight + window.innerHeight*2;
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const part = viewportHeight / 5;
+        const imgHeight1 = scroll1.offsetHeight;
+        const imgHeight2 = scroll2.offsetHeight;
+        const imgHeight3 = scroll3.offsetHeight;
+        const maxHeight1 = imgHeight1 / 14;
+        const maxHeight2 = imgHeight2 / 14;
+        const maxHeight3 = imgHeight3 / 14;
+
+        // helper
+        const setHeight = (nodes, height) => {
+            nodes.forEach(el => el.style.height = `${height}px`);
+        };
+
+        // 1/5
+        if (scrollY >= start && scrollY < start + part) {
+            setHeight(img2, 0);
+            setHeight(img3, 0);
+        }
+
+        // 2/5 — scrol12 растёт
+        else if (scrollY >= start + part && scrollY < start + part * 2) {
+            const progress = (scrollY - (start + part)) / part;
+            setHeight(img2, progress * maxHeight2);
+            setHeight(img3, 0);
+        }
+
+        // 3/5
+        else if (scrollY >= start + part * 2 && scrollY < start + part * 3) {
+            setHeight(img2, maxHeight2);
+            setHeight(img3, 0);
+        }
+
+        // 4/5 — scrol13 растёт
+        else if (scrollY >= start + part * 3 && scrollY < start + part * 4) {
+            const progress = (scrollY - (start + part * 3)) / part;
+            setHeight(img3, progress * (maxHeight3+2));
+        }
+
+        // 5/5
+        else if (scrollY >= start + part * 4 && scrollY < start + viewportHeight) {
+            setHeight(img3, maxHeight3+2);
+        }
+        if (scrollY >= start - 20 && scrollY < start + viewportHeight) {
+            img.classList.add('fixed');
+        } else {
+            img.classList.remove('fixed');
+        }
+    });
+});
+</script>
+
+
+
+
 
 </body>
 </html>
